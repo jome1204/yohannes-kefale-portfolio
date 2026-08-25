@@ -32,8 +32,12 @@ async function loadMessages() {
 }
 
 async function saveMessages() {
-  await mkdir(dataDir, { recursive: true });
-  await writeFile(messagesFile, JSON.stringify(memory.messages, null, 2));
+  try {
+    await mkdir(dataDir, { recursive: true });
+    await writeFile(messagesFile, JSON.stringify(memory.messages, null, 2));
+  } catch {
+    // Serverless / read-only disks keep messages in memory only.
+  }
 }
 
 export async function initStore() {

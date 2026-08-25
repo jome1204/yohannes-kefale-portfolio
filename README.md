@@ -34,6 +34,18 @@ npm run dev
 
 Then open **http://localhost:5173**
 
+## Deploy
+
+The production server builds the React app and serves it from Express on one URL.
+
+```bash
+npm run setup
+npm run build
+npm start
+```
+
+This repo is set up for **Vercel** (`vercel.json`) and **Render** (`render.yaml`).
+
 - Site: http://localhost:5173
 - API: http://localhost:5000
 - Health: http://localhost:5000/api/health
