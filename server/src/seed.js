@@ -1,0 +1,423 @@
+import { Profile } from "./models/Profile.js";
+import { Project } from "./models/Project.js";
+import { Experience } from "./models/Experience.js";
+import { SkillGroup } from "./models/SkillGroup.js";
+
+export const profile = {
+  name: "Yohannes Kefale",
+  firstName: "Yohannes",
+  lastName: "Kefale",
+  title: "Software Developer",
+  headline: "Full-Stack JavaScript & MERN Specialist",
+  location: "Addis Ababa, Ethiopia",
+  email: "yohannes.kefale1204@gmail.com",
+  phone: "+251 973 078 534",
+  linkedin: "https://linkedin.com/in/yohannes-kefale",
+  github: "https://github.com/jome1204",
+  resumeUrl: "/YohannesCV.pdf",
+  photoUrl: "/profile.jpg",
+  availability: "Open for remote product and infrastructure work",
+  summary:
+    "Results-oriented software developer with 5+ years of combined professional and project-based experience delivering scalable web applications and reliable infrastructure solutions. I specialize in React, Next.js, Node.js, and the MERN stack, with a record of successful remote client delivery, performance optimization, secure API design, and enterprise systems support. Top Rated on Upwork with 100% positive client feedback.",
+  stats: [
+    { value: "5+", label: "Years building" },
+    { value: "15+", label: "Client projects" },
+    { value: "5.0", label: "Upwork rating" },
+    { value: "40%", label: "Perf gains delivered" },
+  ],
+  languages: [
+    { name: "Amharic", level: "Native" },
+    { name: "English", level: "Proficient" },
+    { name: "Geez", level: "Working" },
+  ],
+  education: [
+    {
+      degree: "B.Sc. Information Systems",
+      school: "Addis Ababa University",
+      detail: "Core systems, databases, and software engineering",
+    },
+  ],
+  certifications: [
+    "Professional Certificate in Cybersecurity",
+    "Advanced Database Systems Trainer",
+  ],
+};
+
+export const skillGroups = [
+  {
+    category: "Front End",
+    order: 1,
+    items: ["React.js", "Next.js", "TypeScript", "Redux", "Responsive UI"],
+  },
+  {
+    category: "Back End",
+    order: 2,
+    items: ["Node.js", "Express.js", "Python", "REST APIs", "JWT / RBAC"],
+  },
+  {
+    category: "Data & DevOps",
+    order: 3,
+    items: ["MongoDB", "PostgreSQL", "Docker", "AWS", "CI-ready delivery"],
+  },
+  {
+    category: "Systems",
+    order: 4,
+    items: ["RHEL", "AIX", "Nutanix", "Oracle connectivity", "Capacity planning"],
+  },
+  {
+    category: "Delivery",
+    order: 5,
+    items: [
+      "Performance optimization",
+      "Payments",
+      "Integrations",
+      "Scalable architecture",
+      "Role-based access control",
+    ],
+  },
+];
+
+export const experience = [
+  {
+    role: "Cloud and Core System Administrator",
+    organization: "Dashen Bank",
+    location: "Addis Ababa",
+    period: "Dec 2024 — Present",
+    startDate: "2024-12",
+    current: true,
+    order: 1,
+    bullets: [
+      "Manage critical and non-critical production processes across cloud and core banking infrastructure.",
+      "Plan capacity, security, and software upgrades while administering service requests end to end.",
+      "Monitor cloud systems and application health, then recommend architecture improvements.",
+      "Design disaster-recovery solutions and maintain technical documentation for operators.",
+    ],
+  },
+  {
+    role: "Senior Full-Stack Developer",
+    organization: "Freelance / Upwork",
+    location: "Remote",
+    period: "2022 — Present",
+    startDate: "2022-01",
+    current: true,
+    order: 2,
+    bullets: [
+      "Delivered 15+ complex full-stack projects for international clients with a 5.0-star rating, Top Rated status, and 100% positive feedback.",
+      "Improved client web performance by up to 40% by modernizing legacy codebases with React.js, effective state management, and responsive UI patterns.",
+      "Designed secure RESTful APIs and integrated third-party services, including AWS and Stripe, to support dependable business workflows and payments.",
+    ],
+  },
+  {
+    role: "Full-Stack Developer Intern",
+    organization: "Andinet International College",
+    location: "Addis Ababa",
+    period: "2023 — 2024",
+    startDate: "2023-01",
+    current: false,
+    order: 3,
+    bullets: [
+      "Developed the institution's official web platform with React and Node.js, enabling dynamic content delivery and stronger user engagement.",
+      "Built an integrated student-management system with automated administrative workflows and role-based access control.",
+    ],
+  },
+  {
+    role: "Systems & Infrastructure Analyst Intern",
+    organization: "AAU Data Center",
+    location: "Addis Ababa",
+    period: "2023 — 2024",
+    startDate: "2023-01",
+    current: false,
+    order: 4,
+    bullets: [
+      "Supported Red Hat Enterprise Linux server environments and Oracle database connectivity for high-reliability operations.",
+      "Assisted virtual-server cutover and migration to Nutanix environments, contributing to high availability and uninterrupted service.",
+    ],
+  },
+];
+
+export const projects = [
+  {
+    slug: "ethiohire",
+    title: "EthioHire",
+    subtitle: "Recruitment ecosystem",
+    category: "Platform",
+    year: "2024",
+    featured: true,
+    order: 1,
+    summary:
+      "Full-stack recruitment platform that streamlines industrial hiring through advanced candidate filtering and real-time dashboards.",
+    problem:
+      "Industrial hiring teams were juggling spreadsheets, inbox threads, and disconnected job boards. Shortlists were slow, and hiring managers had no live view of pipeline health.",
+    solution:
+      "A MERN hiring workspace with role-based access for recruiters, hiring managers, and candidates. Search and filter across skills, experience, and availability. Live dashboards track funnel conversion from application to offer.",
+    outcome:
+      "Hiring workflows collapse into one operational surface: posting, screening, shortlisting, and reporting without leaving the platform.",
+    stack: ["React", "Node.js", "Express", "MongoDB", "REST APIs", "RBAC"],
+    highlights: [
+      "Advanced candidate filtering across skills, tenure, and location",
+      "Real-time recruiter and hiring-manager dashboards",
+      "Role-based access for applicants, recruiters, and admins",
+      "Structured pipelines from application through interview",
+    ],
+    repoUrl: "https://github.com/jome1204/online-job-portal",
+    liveUrl: "http://localhost:5174",
+    cover: { from: "#1a2a22", to: "#c9a227", accent: "#7d9a6a", motif: "grid" },
+  },
+  {
+    slug: "kraken-real-estate",
+    title: "Kraken",
+    subtitle: "AI real estate assistant",
+    category: "Product",
+    year: "2026",
+    featured: true,
+    order: 2,
+    summary:
+      "Voice-first real estate assistant with listings search, buyer memory, and a guided acquisition flow for serious property buyers.",
+    problem:
+      "Property search still dumps buyers into filter forms that forget context. Agents repeat the same qualifying questions, and buyers lose momentum between sessions.",
+    solution:
+      "A TypeScript full-stack assistant that keeps buyer preferences in memory, answers in voice or text, and maps intent onto live listings rather than a dead catalog.",
+    outcome:
+      "Buyers get a continuous conversation instead of a reset form. Agents inherit qualified intent instead of raw traffic.",
+    stack: ["TypeScript", "React", "Node.js", "MongoDB", "Voice UX", "AI orchestration"],
+    highlights: [
+      "Voice and chat interfaces over the same listing brain",
+      "Persistent buyer memory across sessions",
+      "Listing retrieval grounded in stated constraints",
+      "Operator-ready conversation traces for follow-up",
+    ],
+    repoUrl: "https://github.com/jome1204/kraken-real-estate",
+    liveUrl: "",
+    cover: { from: "#1c2433", to: "#d4a574", accent: "#8eb4d4", motif: "orb" },
+  },
+  {
+    slug: "opspilot-ai",
+    title: "OpsPilot AI",
+    subtitle: "Intelligent operations platform",
+    category: "SaaS",
+    year: "2026",
+    featured: true,
+    order: 3,
+    summary:
+      "MERN operations platform that turns business events, incidents, and automations into a single command surface for operators.",
+    problem:
+      "Operations teams bounce between tickets, logs, and chat. Decisions lag because context is scattered and automations are untrusted.",
+    solution:
+      "A MongoDB, Express, React, and Node.js platform with dashboards, incident tracking, and human-approved automations. Optional AI briefs summarize the current operational picture without blocking the demo if keys are absent.",
+    outcome:
+      "Operators see events, incidents, and automation runs in one place — with an executive brief they can actually act on.",
+    stack: ["React", "TypeScript", "Express", "MongoDB", "JWT", "AI briefs"],
+    highlights: [
+      "Executive operations dashboard with live incident state",
+      "JWT-secured API and seeded demo workspace",
+      "Human-approved automation runs",
+      "Graceful fallback when AI credentials are not configured",
+    ],
+    repoUrl: "https://github.com/jome1204/opspilot-ai",
+    liveUrl: "",
+    cover: { from: "#141816", to: "#e0b15b", accent: "#5c8f7a", motif: "radar" },
+  },
+  {
+    slug: "enterprise-commerce",
+    title: "Enterprise Commerce Suite",
+    subtitle: "Inventory, checkout, and ops",
+    category: "Commerce",
+    year: "2024",
+    featured: false,
+    order: 4,
+    summary:
+      "Scalable MERN commerce application with inventory-management workflows and integrated payment gateways.",
+    problem:
+      "Growing catalogs break when inventory, checkout, and admin reporting live in separate tools. Payment failures and stock drift become operational incidents.",
+    solution:
+      "A single MERN suite covering catalog, inventory movements, checkout, and admin operations. Stripe and AWS integrations keep payments and media on production-grade rails.",
+    outcome:
+      "Merchants run catalog, stock, and settlement from one stack — with APIs that can grow into marketplace or B2B flows.",
+    stack: ["React", "Node.js", "Express", "MongoDB", "Stripe", "AWS"],
+    highlights: [
+      "Inventory workflows with stock-aware checkout",
+      "Integrated payment gateways for dependable settlement",
+      "Admin surfaces for orders, catalog, and reporting",
+      "API design ready for additional sales channels",
+    ],
+    repoUrl: "https://github.com/jome1204",
+    liveUrl: "",
+    cover: { from: "#2a1c16", to: "#e8c27a", accent: "#c45c3a", motif: "tiles" },
+  },
+  {
+    slug: "andinet-campus",
+    title: "Andinet Campus Platform",
+    subtitle: "Web + student management",
+    category: "Education",
+    year: "2024",
+    featured: false,
+    order: 5,
+    summary:
+      "React and Node.js platform for dynamic institutional content, workflow automation, and role-based access — built for Andinet International College.",
+    problem:
+      "The college needed a public web presence and an internal student system. Staff were duplicating work across static pages and manual admin processes.",
+    solution:
+      "A dual-surface product: a public React site for institutional content, plus a student-management system with automated administrative workflows and RBAC for staff, students, and operators.",
+    outcome:
+      "Content updates without redeploys, and administrative work that used to live in spreadsheets now runs through authenticated workflows.",
+    stack: ["React", "Node.js", "Express", "MongoDB", "RBAC", "CMS patterns"],
+    highlights: [
+      "Dynamic public content for the college website",
+      "Integrated student records and admin workflows",
+      "Role-based access across staff and students",
+      "Delivered during a full-stack internship with production intent",
+    ],
+    repoUrl: "https://github.com/jome1204",
+    liveUrl: "",
+    cover: { from: "#1b2230", to: "#d7c4a3", accent: "#6a8caf", motif: "columns" },
+  },
+  {
+    slug: "ai-ops-command-center",
+    title: "AI Operations Command Center",
+    subtitle: "Incidents, events, automations",
+    category: "Ops",
+    year: "2026",
+    featured: false,
+    order: 6,
+    summary:
+      "Production-oriented full-stack app for monitoring operational events, surfacing AI summaries, tracking incidents, and running human-approved automations.",
+    problem:
+      "Portfolio ops demos are usually dashboards with fake charts. Operators need auth, persistence, incident state, and an honest AI fallback.",
+    solution:
+      "React + TypeScript client on an Express API with MongoDB, JWT auth, incident management, an event feed, automation runs, and an executive brief endpoint that degrades cleanly without an AI key.",
+    outcome:
+      "A credible operations console that can be seeded, signed into, and demoed locally — including the failure path.",
+    stack: ["React", "TypeScript", "Express", "MongoDB", "JWT", "REST"],
+    highlights: [
+      "JWT authentication and seeded demo account",
+      "Incident management and operational event feed",
+      "Automation run history with human approval",
+      "Health endpoint and MongoDB persistence",
+    ],
+    repoUrl: "https://github.com/jome1204/ai-operations-command-center",
+    liveUrl: "",
+    cover: { from: "#101414", to: "#9ad0b4", accent: "#e0b15b", motif: "console" },
+  },
+  {
+    slug: "sentinel-vault",
+    title: "Sentinel Server Vault",
+    subtitle: "Credential operations",
+    category: "Security",
+    year: "2025",
+    featured: false,
+    order: 7,
+    summary:
+      "Secure server credential management dashboard with approval workflows — built for teams that cannot keep production secrets in chat.",
+    problem:
+      "Server credentials leak through spreadsheets, Slack, and shared docs. Access is either too open or too slow when production is on fire.",
+    solution:
+      "A TypeScript dashboard for storing, requesting, and approving server credentials with an audit-minded workflow instead of a shared password file.",
+    outcome:
+      "Operators get credentials through a controlled path. Approvers see who asked, for what host, and whether access was granted.",
+    stack: ["TypeScript", "React", "Node.js", "MongoDB", "Approval workflows"],
+    highlights: [
+      "Credential inventory with least-privilege access",
+      "Request and approval workflows",
+      "Operator dashboard for server identities",
+      "Audit-friendly access trail",
+    ],
+    repoUrl: "https://github.com/jome1204/sentinel-server-vault",
+    liveUrl: "",
+    cover: { from: "#16120f", to: "#c9a66b", accent: "#8a3b2a", motif: "lock" },
+  },
+  {
+    slug: "netwatch",
+    title: "NetWatch",
+    subtitle: "Network operations console",
+    category: "Infrastructure",
+    year: "2026",
+    featured: false,
+    order: 8,
+    summary:
+      "C++ network monitoring and infrastructure management system with a live operator dashboard — systems work that sits next to the MERN product layer.",
+    problem:
+      "Infrastructure teams need more than a web health check. Packet-level and host-level visibility has to stay fast, local, and operator-first.",
+    solution:
+      "A C++ monitoring core paired with a live operator dashboard. The same discipline used on RHEL, Nutanix, and bank core systems — applied to network telemetry.",
+    outcome:
+      "Operators get a dedicated watch surface instead of stitching together ad-hoc scripts when the network degrades.",
+    stack: ["C++", "Networking", "Live dashboard", "RHEL-adjacent ops"],
+    highlights: [
+      "C++ monitoring core for infrastructure telemetry",
+      "Live operator dashboard for network state",
+      "Designed for high-reliability environments",
+      "Complements cloud and core administration work",
+    ],
+    repoUrl: "https://github.com/jome1204/netwatch",
+    liveUrl: "",
+    cover: { from: "#0f1c1a", to: "#6fbfa8", accent: "#e0b15b", motif: "pulse" },
+  },
+  {
+    slug: "binforge",
+    title: "BinForge",
+    subtitle: "Binary inspection library",
+    category: "Systems",
+    year: "2026",
+    featured: false,
+    order: 9,
+    summary:
+      "Original C++17 library for inspecting ELF, PE, and Mach-O images with simulated loading, analysis, and offline fuzzing — without executing untrusted bytes.",
+    problem:
+      "Untrusted executables need structural inspection without handing them the CPU. Most tooling either executes too much or understands too little of the format graph.",
+    solution:
+      "A dependency-free C++17 library with bounded parsing, simulated loading into an owned address space, and libFuzzer targets for parse, load, relocation, and debug paths. It never transfers control to input bytes.",
+    outcome:
+      "A serious systems artifact: format coverage, sanitizer-friendly fuzz harnesses, and a clear safety boundary between inspection and execution.",
+    stack: ["C++17", "ELF / PE / Mach-O", "libFuzzer", "CMake", "Security engineering"],
+    highlights: [
+      "ELF32/64, PE32/PE32+, and Mach-O coverage",
+      "Simulated load into separately owned regions",
+      "Seven independent fuzz targets with seed corpora",
+      "Inspection only — never executes guest code",
+    ],
+    repoUrl: "https://github.com/jome1204/binforge",
+    liveUrl: "",
+    cover: { from: "#121018", to: "#b8a4e0", accent: "#e0b15b", motif: "hex" },
+  },
+  {
+    slug: "infrastructure-modernization",
+    title: "Infrastructure Modernization",
+    subtitle: "RHEL, Oracle, Nutanix",
+    category: "Enterprise",
+    year: "2024",
+    featured: false,
+    order: 10,
+    summary:
+      "RHEL, Oracle, and Nutanix-focused operational support for resilient enterprise environments at the AAU Data Center.",
+    problem:
+      "Campus and enterprise workloads cannot absorb downtime during virtualization cutover. Oracle connectivity and Linux estates have to stay available while the platform moves.",
+    solution:
+      "Hands-on support for RHEL server environments, Oracle database connectivity, and virtual-server migration onto Nutanix — with capacity, security, and runbook discipline.",
+    outcome:
+      "High-availability posture during migration. The same operational muscle now applied to core banking systems at Dashen Bank.",
+    stack: ["RHEL", "Oracle", "Nutanix", "Capacity planning", "DR design"],
+    highlights: [
+      "RHEL server support for high-reliability operations",
+      "Oracle connectivity kept intact through change",
+      "Virtual-server cutover onto Nutanix",
+      "Documentation and security hygiene for operators",
+    ],
+    repoUrl: "https://github.com/jome1204",
+    liveUrl: "",
+    cover: { from: "#1a1f18", to: "#8f9a6a", accent: "#c9a227", motif: "racks" },
+  },
+];
+
+export async function seedDatabase() {
+  const [profileCount, projectCount, experienceCount, skillCount] = await Promise.all([
+    Profile.countDocuments(),
+    Project.countDocuments(),
+    Experience.countDocuments(),
+    SkillGroup.countDocuments(),
+  ]);
+
+  if (!profileCount) await Profile.create(profile);
+  if (!projectCount) await Project.insertMany(projects);
+  if (!experienceCount) await Experience.insertMany(experience);
+  if (!skillCount) await SkillGroup.insertMany(skillGroups);
+}
