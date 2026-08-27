@@ -15,7 +15,7 @@ export const profile = {
   linkedin: "https://linkedin.com/in/yohannes-kefale",
   github: "https://github.com/jome1204",
   resumeUrl: "/YohannesCV.pdf",
-  photoUrl: "/profile.jpg",
+  photoUrl: "/profile.jpg?v=2",
   availability: "Open for remote product and infrastructure work",
   summary:
     "Results-oriented software developer with 5+ years of combined professional and project-based experience delivering scalable web applications and reliable infrastructure solutions. I specialize in React, Next.js, Node.js, and the MERN stack, with a record of successful remote client delivery, performance optimization, secure API design, and enterprise systems support. Top Rated on Upwork with 100% positive client feedback.",
@@ -141,7 +141,7 @@ export const projects = [
     title: "EthioHire",
     subtitle: "Recruitment ecosystem",
     category: "Platform",
-    year: "2024",
+    year: "2026",
     featured: true,
     order: 1,
     summary:
@@ -159,8 +159,8 @@ export const projects = [
       "Role-based access for applicants, recruiters, and admins",
       "Structured pipelines from application through interview",
     ],
-    repoUrl: "https://github.com/jome1204/online-job-portal",
-    liveUrl: "http://localhost:5174",
+    repoUrl: "https://github.com/jome1204/ethiohire",
+    liveUrl: "",
     cover: { from: "#1a2a22", to: "#c9a227", accent: "#7d9a6a", motif: "grid" },
   },
   {
