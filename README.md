@@ -2,7 +2,7 @@
 
 MERN portfolio for **Yohannes Kefale**, a full-stack JavaScript developer in Addis Ababa. Content is seeded from the CV and selected public projects.
 
-Featured app: [EthioHire](https://github.com/jome1204/ethiohire) — recruitment workspace with jobs, pipeline, and role-based dashboards.
+Featured app: [EthioHire](https://ethiohire-pied.vercel.app) ([GitHub](https://github.com/jome1204/ethiohire)) — recruitment workspace with jobs, pipeline, and role-based dashboards.
 
 - **MongoDB** stores profile, projects, experience, skills, and contact messages
 - **Express / Node** serve the REST API

@@ -160,7 +160,7 @@ export const projects = [
       "Structured pipelines from application through interview",
     ],
     repoUrl: "https://github.com/jome1204/ethiohire",
-    liveUrl: "",
+    liveUrl: "https://ethiohire-pied.vercel.app",
     cover: { from: "#1a2a22", to: "#c9a227", accent: "#7d9a6a", motif: "grid" },
   },
   {
