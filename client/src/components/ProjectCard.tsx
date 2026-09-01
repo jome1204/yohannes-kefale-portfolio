@@ -10,6 +10,7 @@ export function ProjectCard({ project }: { project: Project }) {
         <h3>{project.title}</h3>
         <p>{project.summary}</p>
         <div className="stack-row">
+          {project.liveUrl ? <span className="live-pill">Live</span> : null}
           {project.stack.slice(0, 4).map((item) => (
             <span key={item}>{item}</span>
           ))}

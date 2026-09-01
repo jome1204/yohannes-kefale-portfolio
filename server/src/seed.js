@@ -137,13 +137,67 @@ export const experience = [
 
 export const projects = [
   {
+    slug: "school360",
+    title: "School360",
+    subtitle: "School operating system",
+    category: "Education",
+    year: "2026",
+    featured: true,
+    order: 1,
+    summary:
+      "Unified school platform for academics, parents, finance, and student support — with role-based access from super admin to counselor and guard.",
+    problem:
+      "Schools run attendance, grades, fees, and parent messages in separate tools. Staff see too much, parents see too little, and student support falls through the cracks.",
+    solution:
+      "A MERN workspace where Super Admin sees every module, and every other role only gets the navigation, APIs, and records they are authorized to use. JWT access plus HTTP-only refresh cookies keep sessions tight.",
+    outcome:
+      "One school desk for directors, teachers, finance, parents, and students — instead of a stack of spreadsheets and chat groups.",
+    stack: ["React", "TypeScript", "Redux Toolkit", "Express", "MongoDB", "RBAC"],
+    highlights: [
+      "Role-aware sidebar and APIs for nine school personas",
+      "Academics, parent communication, and student support in one product",
+      "JWT access tokens with HTTP-only refresh cookies",
+      "In-memory Mongo demo so the app runs without a cluster",
+    ],
+    repoUrl: "https://github.com/jome1204/school360",
+    liveUrl: "",
+    cover: { from: "#14221c", to: "#d4a84b", accent: "#6f8c74", motif: "columns" },
+  },
+  {
+    slug: "finpilot-ai",
+    title: "FinPilot AI",
+    subtitle: "Founder decision studio",
+    category: "Fintech",
+    year: "2026",
+    featured: true,
+    order: 2,
+    summary:
+      "Financial twin and decision studio for founders — cash, scenarios, and operator briefs in a MERN workspace built for live product demos.",
+    problem:
+      "Founders track burn in spreadsheets that cannot answer 'what if we hire two engineers?' without a weekend of model wrangling.",
+    solution:
+      "A TypeScript full-stack studio that keeps a financial twin of the company, runs scenarios, and surfaces decision briefs without blocking the demo if an AI key is missing.",
+    outcome:
+      "Founders get a working decision surface instead of a static pitch-deck model.",
+    stack: ["TypeScript", "React", "Node.js", "Express", "MongoDB", "AI briefs"],
+    highlights: [
+      "Financial twin for cash and hiring scenarios",
+      "Decision studio UI for operators, not analysts only",
+      "API that can run in guest mode for public demos",
+      "MERN delivery with seedable local data",
+    ],
+    repoUrl: "https://github.com/jome1204/finpilot-ai",
+    liveUrl: "",
+    cover: { from: "#101820", to: "#c9a66b", accent: "#5c8f7a", motif: "radar" },
+  },
+  {
     slug: "ethiohire",
     title: "EthioHire",
     subtitle: "Recruitment ecosystem",
     category: "Platform",
     year: "2026",
     featured: true,
-    order: 1,
+    order: 3,
     summary:
       "Full-stack recruitment platform that streamlines industrial hiring through advanced candidate filtering and real-time dashboards.",
     problem:
@@ -170,7 +224,7 @@ export const projects = [
     category: "Product",
     year: "2026",
     featured: true,
-    order: 2,
+    order: 4,
     summary:
       "Voice-first real estate assistant with listings search, buyer memory, and a guided acquisition flow for serious property buyers.",
     problem:
@@ -187,7 +241,7 @@ export const projects = [
       "Operator-ready conversation traces for follow-up",
     ],
     repoUrl: "https://github.com/jome1204/kraken-real-estate",
-    liveUrl: "",
+    liveUrl: "https://kraken-real-estate.vercel.app",
     cover: { from: "#1c2433", to: "#d4a574", accent: "#8eb4d4", motif: "orb" },
   },
   {
@@ -196,8 +250,8 @@ export const projects = [
     subtitle: "Intelligent operations platform",
     category: "SaaS",
     year: "2026",
-    featured: true,
-    order: 3,
+    featured: false,
+    order: 5,
     summary:
       "MERN operations platform that turns business events, incidents, and automations into a single command surface for operators.",
     problem:
@@ -224,7 +278,7 @@ export const projects = [
     category: "Commerce",
     year: "2024",
     featured: false,
-    order: 4,
+    order: 6,
     summary:
       "Scalable MERN commerce application with inventory-management workflows and integrated payment gateways.",
     problem:
@@ -251,7 +305,7 @@ export const projects = [
     category: "Education",
     year: "2024",
     featured: false,
-    order: 5,
+    order: 7,
     summary:
       "React and Node.js platform for dynamic institutional content, workflow automation, and role-based access — built for Andinet International College.",
     problem:
@@ -278,7 +332,7 @@ export const projects = [
     category: "Ops",
     year: "2026",
     featured: false,
-    order: 6,
+    order: 8,
     summary:
       "Production-oriented full-stack app for monitoring operational events, surfacing AI summaries, tracking incidents, and running human-approved automations.",
     problem:
@@ -305,7 +359,7 @@ export const projects = [
     category: "Security",
     year: "2025",
     featured: false,
-    order: 7,
+    order: 9,
     summary:
       "Secure server credential management dashboard with approval workflows — built for teams that cannot keep production secrets in chat.",
     problem:
@@ -332,7 +386,7 @@ export const projects = [
     category: "Infrastructure",
     year: "2026",
     featured: false,
-    order: 8,
+    order: 10,
     summary:
       "C++ network monitoring and infrastructure management system with a live operator dashboard — systems work that sits next to the MERN product layer.",
     problem:
@@ -359,7 +413,7 @@ export const projects = [
     category: "Systems",
     year: "2026",
     featured: false,
-    order: 9,
+    order: 11,
     summary:
       "Original C++17 library for inspecting ELF, PE, and Mach-O images with simulated loading, analysis, and offline fuzzing — without executing untrusted bytes.",
     problem:
@@ -386,7 +440,7 @@ export const projects = [
     category: "Enterprise",
     year: "2024",
     featured: false,
-    order: 10,
+    order: 12,
     summary:
       "RHEL, Oracle, and Nutanix-focused operational support for resilient enterprise environments at the AAU Data Center.",
     problem:

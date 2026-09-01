@@ -15,7 +15,7 @@ export function HomeView({
 }) {
   const featured = projects.filter((p) => p.featured);
   const rest = projects.filter((p) => !p.featured);
-  const shown = [...featured, ...rest].slice(0, 6);
+  const shown = [...featured, ...rest].slice(0, 8);
 
   return (
     <>
@@ -148,7 +148,7 @@ export function HomeView({
           <div className="section-head">
             <div>
               <div className="kicker">03 — Selected work</div>
-              <h2>Platforms, ops consoles, and systems.</h2>
+              <h2>Latest shipped products, plus systems work.</h2>
             </div>
           </div>
           <div className="project-grid">

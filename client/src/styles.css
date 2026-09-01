@@ -664,6 +664,11 @@ textarea {
   padding: 0.15rem 0.5rem;
 }
 
+.live-pill {
+  color: var(--ok) !important;
+  border-color: rgba(143, 191, 138, 0.4) !important;
+}
+
 .more-link {
   margin-top: 1.4rem;
   color: var(--gold-2);
