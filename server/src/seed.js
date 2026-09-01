@@ -160,7 +160,7 @@ export const projects = [
       "In-memory Mongo demo so the app runs without a cluster",
     ],
     repoUrl: "https://github.com/jome1204/school360",
-    liveUrl: "",
+    liveUrl: "https://school-rho-black.vercel.app",
     cover: { from: "#14221c", to: "#d4a84b", accent: "#6f8c74", motif: "columns" },
   },
   {
@@ -187,7 +187,7 @@ export const projects = [
       "MERN delivery with seedable local data",
     ],
     repoUrl: "https://github.com/jome1204/finpilot-ai",
-    liveUrl: "",
+    liveUrl: "https://finpilot-ai-ten.vercel.app",
     cover: { from: "#101820", to: "#c9a66b", accent: "#5c8f7a", motif: "radar" },
   },
   {

@@ -2,7 +2,7 @@
 
 MERN portfolio for **Yohannes Kefale**, a full-stack JavaScript developer in Addis Ababa. Content is seeded from the CV and selected public projects.
 
-Featured live apps: [EthioHire](https://ethiohire-pied.vercel.app) and [Kraken](https://kraken-real-estate.vercel.app). Latest GitHub products: [School360](https://github.com/jome1204/school360) and [FinPilot AI](https://github.com/jome1204/finpilot-ai).
+Featured live apps: [School360](https://school-rho-black.vercel.app), [FinPilot AI](https://finpilot-ai-ten.vercel.app), [EthioHire](https://ethiohire-pied.vercel.app), and [Kraken](https://kraken-real-estate.vercel.app).
 
 - **MongoDB** stores profile, projects, experience, skills, and contact messages
 - **Express / Node** serve the REST API
