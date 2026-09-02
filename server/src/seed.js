@@ -160,7 +160,7 @@ export const projects = [
       "In-memory Mongo demo so the app runs without a cluster",
     ],
     repoUrl: "https://github.com/jome1204/school360",
-    liveUrl: "https://jome1204.github.io/school360/",
+    liveUrl: "https://school360-mlfh.onrender.com",
     cover: { from: "#14221c", to: "#d4a84b", accent: "#6f8c74", motif: "columns" },
   },
   {
