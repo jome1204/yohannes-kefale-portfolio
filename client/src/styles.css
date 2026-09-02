@@ -522,6 +522,13 @@ textarea {
   transition: transform 0.22s ease, border-color 0.22s ease;
 }
 
+.project-card-main {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  color: inherit;
+}
+
 .project-card:hover {
   transform: translateY(-4px);
   border-color: rgba(212, 168, 75, 0.4);
@@ -630,11 +637,15 @@ textarea {
 }
 
 .project-body {
-  padding: 1.15rem 1.2rem 1.3rem;
+  padding: 1.15rem 1.2rem 0.4rem;
   display: flex;
   flex-direction: column;
   gap: 0.55rem;
   flex: 1;
+}
+
+.project-card-meta {
+  padding: 0 1.2rem 1.3rem;
 }
 
 .project-body h3 {
@@ -656,7 +667,8 @@ textarea {
   gap: 0.35rem;
 }
 
-.stack-row span {
+.stack-row span,
+.stack-row a {
   font-size: 0.75rem;
   color: var(--faint);
   border: 1px solid var(--line-strong);
@@ -667,6 +679,7 @@ textarea {
 .live-pill {
   color: var(--ok) !important;
   border-color: rgba(143, 191, 138, 0.4) !important;
+  font-weight: 600;
 }
 
 .more-link {

@@ -22,7 +22,7 @@ export function ProjectPage() {
       <div className="error-box">
         <div>
           <p>{error}</p>
-          <Link className="back" to="/#work">
+          <Link className="back" to={{ pathname: "/", hash: "work" }}>
             Back to work
           </Link>
         </div>
@@ -44,7 +44,7 @@ export function ProjectPage() {
   return (
     <article className="page">
       <div className="shell">
-        <Link className="back" to="/#work">
+        <Link className="back" to={{ pathname: "/", hash: "work" }}>
           ← Selected work
         </Link>
         <header className="detail-hero">
@@ -79,14 +79,14 @@ export function ProjectPage() {
               ))}
             </ul>
             <div className="hero-actions">
-              {project.repoUrl ? (
-                <a className="btn btn-primary" href={project.repoUrl} target="_blank" rel="noreferrer">
-                  View repository
+              {project.liveUrl ? (
+                <a className="btn btn-primary" href={project.liveUrl} target="_blank" rel="noreferrer">
+                  Live demo
                 </a>
               ) : null}
-              {project.liveUrl ? (
-                <a className="btn btn-ghost" href={project.liveUrl} target="_blank" rel="noreferrer">
-                  Live demo
+              {project.repoUrl ? (
+                <a className={project.liveUrl ? "btn btn-ghost" : "btn btn-primary"} href={project.repoUrl} target="_blank" rel="noreferrer">
+                  View repository
                 </a>
               ) : null}
             </div>

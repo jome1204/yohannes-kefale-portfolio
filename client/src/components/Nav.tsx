@@ -3,10 +3,10 @@ import { Link, NavLink } from "react-router-dom";
 import type { Profile } from "../types";
 
 const links = [
-  { href: "/#work", label: "Work" },
-  { href: "/#experience", label: "Experience" },
-  { href: "/#about", label: "About" },
-  { href: "/#contact", label: "Contact" },
+  { to: { pathname: "/", hash: "work" }, label: "Work" },
+  { to: { pathname: "/", hash: "experience" }, label: "Experience" },
+  { to: { pathname: "/", hash: "about" }, label: "About" },
+  { to: { pathname: "/", hash: "contact" }, label: "Contact" },
 ];
 
 export function Nav({ profile }: { profile: Profile }) {
@@ -29,13 +29,13 @@ export function Nav({ profile }: { profile: Profile }) {
         </NavLink>
         <nav className={`nav-links ${open ? "open" : ""}`} aria-label="Primary">
           {links.map((link) => (
-            <a key={link.href} href={link.href} onClick={() => setOpen(false)}>
+            <Link key={link.label} to={link.to} onClick={() => setOpen(false)}>
               {link.label}
-            </a>
+            </Link>
           ))}
         </nav>
         <div style={{ display: "flex", gap: "0.7rem", alignItems: "center" }}>
-          <Link className="nav-cta" to="/#contact" onClick={() => setOpen(false)}>
+          <Link className="nav-cta" to={{ pathname: "/", hash: "contact" }} onClick={() => setOpen(false)}>
             Hire me
           </Link>
           <button
