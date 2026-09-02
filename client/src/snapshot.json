@@ -209,7 +209,7 @@
         "In-memory Mongo demo so the app runs without a cluster"
       ],
       "repoUrl": "https://github.com/jome1204/school360",
-      "liveUrl": "https://school-rho-black.vercel.app",
+      "liveUrl": "https://jome1204.github.io/school360/",
       "cover": {
         "from": "#14221c",
         "to": "#d4a84b",
